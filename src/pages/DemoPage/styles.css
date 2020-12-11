@@ -6,3 +6,28 @@
   height: 200px;
   background-color: #cccccc;
 }
+
+.title:before {
+  content: "PHONGTV";
+}
+
+.title:after {
+  content: "XXXX";
+}
+.quote {
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  background-color: #eee;
+  border-radius: 30px;
+  position: relative;
+}
+.quote:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50px;
+  border-top: 10px solid #eee;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}

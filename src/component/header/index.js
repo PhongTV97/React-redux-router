@@ -13,7 +13,8 @@ class Header extends Component {
                         <li className="active"><a href="/abc">Home</a></li>
                         <li className="dropdown">
                             <a className="dropdown-toggle" data-toggle="dropdown" href="/abc">Page 1
-                  <span className="caret" /></a>
+                                <span className="caret" />
+                            </a>
                             <ul className="dropdown-menu">
                                 <li><a href="/abc">Page 1-1</a></li>
                                 <li><a href="/abc">Page 1-2</a></li>

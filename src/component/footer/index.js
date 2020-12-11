@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Footer extends Component {
     render() {
         return (
-            <div className="jumbotron position-fixed text-center">
+            <div className="jumbotron text-center" style={{ position: 'relative', marginTop: 450 }}>
                 <p>Footer</p>
             </div>
         );

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./styles.css";
 import { connect } from 'react-redux';
 import { onLogin } from '../../redux/actions/login';
+import { Link } from 'react-router-dom';
 
 class LoginPage extends Component {
     constructor(props) {
@@ -31,8 +32,8 @@ class LoginPage extends Component {
         if (userName === 'admin' && passWord === '12345') {
             await this.props.onLogin({ userName, passWord });
             this.props.history.push("/home");
-        }else{
-            this.setState({error: 'Username or password wrong!'})
+        } else {
+            this.setState({ error: 'Username or password wrong!' })
         }
     }
 
@@ -68,7 +69,8 @@ class LoginPage extends Component {
                                         {error}
                                     </div>}
                                     <div style={{ flexDirection: 'row' }}>
-                                        <button type="button" className="btn btn-primary" style={{ display: 'inline' }} onClick={this.onSubmit}>Login</button>
+                                        <Link className="btn btn-primary" style={{ display: 'inline' }} to="/demo">Demo</Link>
+                                        {/* <button type="button" className="btn btn-primary" style={{ display: 'inline' }} onClick={this.onSubmit}>Login</button> */}
                                         <a href="/login" className="ml15">Forgot password?</a>
                                     </div>
                                 </div>

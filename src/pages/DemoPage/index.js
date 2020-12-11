@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 import React, { Component } from 'react';
 import Header from '../../component/header';
 import Footer from '../../component/footer';
@@ -8,12 +9,15 @@ class DemoPage extends Component {
   render() {
     return (
       <div>
-        <div className="jumbotron text-center mb-0">
-          <h1>My First Bootstrap 4 Page</h1>
-          <p>Resize this responsive page to see the effect!</p>
+        <div style={{ position: 'fixed', width: '100%', zIndex: 5 }}>
+          <div className="jumbotron text-center mb-0">
+            <h1 className="title"> My Page </h1>
+            <p>Resize this responsive page to see the effect!</p>
+          </div>
+          <Header />
         </div>
-        <Header />
-        <div className="container">
+        <div className="container" style={{ position: 'relative', top: 350 }}>
+          {/* <div className="quote"></div> */}
           <div className="row">
             <div className="col-md-4">
               <h2>About Me</h2>
